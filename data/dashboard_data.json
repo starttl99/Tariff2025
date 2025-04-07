@@ -1,0 +1,63 @@
+{
+  "last_updated": "2025-04-06 19:59:18",
+  "tariff_summary": {},
+  "export_price_indices": {
+    "8501.31": {
+      "product_description": "DC 모터, 출력 750W 이하",
+      "base_country": "KR",
+      "calculation_date": "2025-04-06",
+      "indices": {
+        "KR": 100.0,
+        "JP": 134.76365039168078,
+        "CN": 107.19273613363438,
+        "IN": 95.52716015663498,
+        "TH": 88.73654755738183,
+        "VN": 87.38985312175946,
+        "TW": 101.32495576469265,
+        "EU": 129.38107754361963,
+        "MX": 76.35070802164043
+      }
+    },
+    "8414.59": {
+      "product_description": "팬, 블로워 등",
+      "base_country": "KR",
+      "calculation_date": "2025-04-06",
+      "indices": {
+        "KR": 100.0,
+        "JP": 134.76365039168078,
+        "CN": 107.19273613363438,
+        "IN": 95.52716015663498,
+        "TH": 88.73654755738183,
+        "VN": 87.38985312175946,
+        "TW": 101.32495576469265,
+        "EU": 129.38107754361963,
+        "MX": 76.35070802164043
+      }
+    }
+  },
+  "china_tariff_timeline": [
+    {
+      "date": "2025-02-04",
+      "description": "트럼프 행정부의 첫 번째 관세 인상",
+      "additional_rate": 10.0,
+      "cumulative_rate": 10.0
+    },
+    {
+      "date": "2025-03-04",
+      "description": "트럼프 행정부의 두 번째 관세 인상",
+      "additional_rate": 10.0,
+      "cumulative_rate": 20.0
+    },
+    {
+      "date": "2025-04-02",
+      "description": "트럼프 행정부의 세 번째 관세 인상 ('해방의 날' 관세)",
+      "additional_rate": 34.0,
+      "cumulative_rate": 54.0
+    }
+  ],
+  "china_retaliation": {
+    "date": "2025-04-10",
+    "description": "중국의 미국에 대한 보복 관세",
+    "rate": 34.0
+  }
+}

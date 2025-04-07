@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}미국 관세 정책 추적 및 비용 비교 도구{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>미국 관세 정책 추적 및 비용 비교 도구</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">홈</a></li>
+                    <li><a href="{{ url_for('tariff_policy') }}">관세 정책 요약</a></li>
+                    <li><a href="{{ url_for('manufacturing_cost') }}">제조 비용 시뮬레이션</a></li>
+                    <li><a href="{{ url_for('export_price') }}">수출 가격 비교</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>마지막 업데이트: {{ last_update }}</p>
+            <button id="updateDataBtn" class="update-btn">데이터 업데이트</button>
+            <p>&copy; 2025 자동차 부품 제조업체 전략 기획팀</p>
+        </div>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

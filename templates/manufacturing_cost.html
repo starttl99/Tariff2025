@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+
+{% block title %}국가별 제조 비용 시뮬레이션 - 미국 관세 정책 추적 및 비용 비교 도구{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h2>국가별 제조 비용 시뮬레이션</h2>
+    <p>다양한 비용 요소를 고려한 국가별 제조 비용을 비교하세요. (대한민국 = 100 기준)</p>
+</section>
+
+<section class="product-selector">
+    <h3>제품 카테고리 선택</h3>
+    <form action="{{ url_for('manufacturing_cost') }}" method="get">
+        <select name="product_category" id="productCategory" onchange="this.form.submit()">
+            {% for category in product_categories %}
+            <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</section>
+
+<section class="cost-comparison">
+    <h3>{{ selected_category }} 제조 비용 비교</h3>
+    
+    <div class="chart-container">
+        <canvas id="costChart"></canvas>
+    </div>
+    
+    <div class="cost-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>국가</th>
+                    <th>제조 비용 지수</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(countries|length) %}
+                <tr>
+                    <td>{{ countries[i] }}</td>
+                    <td>{{ costs[i]|round(1) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="cost-factors">
+    <h3>제조 비용 요소 설명</h3>
+    
+    <div class="factor-grid">
+        <div class="factor-card">
+            <h4>기업세율</h4>
+            <p>각 국가의 법인세율로, 기업의 순이익에 부과되는 세금 비율입니다. 높은 기업세율은 제조 비용을 증가시킵니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>이자율(차입 비용)</h4>
+            <p>기업이 자금을 차입할 때 부담하는 이자율로, 설비 투자 및 운영 자금 조달 비용에 영향을 미칩니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>노동 비용</h4>
+            <p>시간당 임금, 사회보험, 복리후생 등을 포함한 총 노동 비용으로, 제조업에서 중요한 비용 요소입니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>토지/공장 임대 비용</h4>
+            <p>제조 시설 부지 및 건물의 임대 또는 소유에 따른 비용으로, 지역에 따라 큰 차이가 있습니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>전기/유틸리티 비용</h4>
+            <p>전기, 수도, 가스 등 제조 과정에 필요한 유틸리티 비용으로, 에너지 집약적 산업에서 중요합니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>물류 및 현지 운송 비용</h4>
+            <p>원자재 조달 및 완제품 운송에 관련된 국내 물류 비용으로, 인프라 수준에 영향을 받습니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>환율 변동성 및 인플레이션</h4>
+            <p>통화 가치의 불안정성과 물가 상승률로, 장기적인 비용 예측 및 계획에 영향을 미칩니다.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('costChart').getContext('2d');
+    
+    const costChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ countries|tojson }},
+            datasets: [{
+                label: '제조 비용 지수',
+                data: {{ costs|tojson }},
+                backgroundColor: Array({{ countries|length }}).fill('rgba(54, 162, 235, 0.6)'),
+                borderColor: Array({{ countries|length }}).fill('rgba(54, 162, 235, 1)'),
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: '비용 지수 (대한민국 = 100)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: '국가'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: '{{ selected_category }} 제조 비용 지수 비교'
+                }
+            }
+        }
+    });
+    
+    // 한국 막대 강조
+    if (costChart.data.labels.includes('대한민국')) {
+        const krIndex = costChart.data.labels.indexOf('대한민국');
+        costChart.data.datasets[0].backgroundColor[krIndex] = 'rgba(255, 99, 132, 0.6)';
+        costChart.data.datasets[0].borderColor[krIndex] = 'rgba(255, 99, 132, 1)';
+        costChart.update();
+    }
+});
+</script>
+{% endblock %}

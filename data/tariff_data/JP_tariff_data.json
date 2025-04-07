@@ -1,0 +1,163 @@
+{
+  "country_code": "JP",
+  "country_name": "일본",
+  "revision_id": "2025-6",
+  "revision_date": "2025-03-01",
+  "collection_date": "2025-04-03T19:53:20.897121",
+  "data": [
+    {
+      "hts_number": "8708.10.00",
+      "description": "범퍼 및 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.21.00",
+      "description": "안전벨트",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.29.00",
+      "description": "차체의 기타 부분품과 부속품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.30.00",
+      "description": "제동장치와 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.40.00",
+      "description": "기어박스와 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.50.00",
+      "description": "차동장치를 갖춘 구동 차축",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.70.00",
+      "description": "로드 휠과 그 부분품과 부속품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.80.00",
+      "description": "서스펜션 시스템과 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.91.00",
+      "description": "방열기와 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.92.00",
+      "description": "소음기와 배기관",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.93.00",
+      "description": "클러치와 그 부분품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.94.00",
+      "description": "운전대, 스티어링 칼럼, 운전박스",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.95.00",
+      "description": "팽창 시스템을 갖춘 안전 에어백",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8708.99.00",
+      "description": "기타 부분품과 부속품",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8407.34.00",
+      "description": "실린더 용량이 1,000cc 초과하는 왕복 피스톤 엔진",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8483.10.00",
+      "description": "전동축과 크랭크",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8511.30.00",
+      "description": "배전기와 점화코일",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8512.20.00",
+      "description": "기타 조명용이나 시각 신호용 기구",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "4011.10.00",
+      "description": "승용자동차용 타이어",
+      "general_rate": "29.0%"
+    },
+    {
+      "hts_number": "8507.60.00",
+      "description": "리튬이온 축전지",
+      "general_rate": "28.4%"
+    },
+    {
+      "hts_number": "8415.20.00",
+      "description": "자동차용 에어컨",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8413.30.00",
+      "description": "내연기관용 연료, 윤활유 또는 냉각 냉매 펌프",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8421.23.00",
+      "description": "내연기관용 오일 필터 또는 가솔린 필터",
+      "general_rate": "27.5%"
+    },
+    {
+      "hts_number": "8482.10.00",
+      "description": "볼베어링",
+      "general_rate": "27.8%"
+    },
+    {
+      "hts_number": "8544.30.00",
+      "description": "자동차용 점화배선 세트와 기타 배선 세트",
+      "general_rate": "30.0%"
+    },
+    {
+      "hts_number": "8501.31",
+      "description": "DC 모터, 출력 750W 이하",
+      "general_rate": "2.8%"
+    },
+    {
+      "hts_number": "8414.59",
+      "description": "팬, 블로워 등",
+      "general_rate": "2.3%"
+    }
+  ],
+  "tariff_data": [
+    {
+      "hs_code": "8501.31",
+      "product_description": "DC 모터, 출력 750W 이하",
+      "tariff_rate": 2.8,
+      "effective_date": "2025-04-09",
+      "expiration_date": "2025-12-31",
+      "notes": ""
+    },
+    {
+      "hs_code": "8414.59",
+      "product_description": "팬, 블로워 등",
+      "tariff_rate": 2.3,
+      "effective_date": "2025-04-09",
+      "expiration_date": "2025-12-31",
+      "notes": ""
+    }
+  ],
+  "last_updated": "2025-04-03"
+}

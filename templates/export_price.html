@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block title %}수출 가격 비교 - 미국 관세 정책 추적 및 비용 비교 도구{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h2>수출 가격 비교</h2>
+    <p>제조 비용, 관세, 무역 협정 혜택을 모두 고려한 최종 수출 가격을 비교하세요.</p>
+</section>
+
+<section class="product-selector">
+    <h3>제품 카테고리 선택</h3>
+    <form action="{{ url_for('export_price') }}" method="get">
+        <select name="product_category" id="productCategory" onchange="this.form.submit()">
+            {% for category in product_categories %}
+            <option value="{{ category }}" {% if category == selected_category %}selected{% endif %}>{{ category }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</section>
+
+<section class="price-comparison">
+    <h3>{{ selected_category }} 수출 가격 비교</h3>
+    
+    <div class="chart-container">
+        <canvas id="priceChart"></canvas>
+    </div>
+    
+    <div class="price-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>국가</th>
+                    <th>수출 가격 지수</th>
+                    <th>한국 대비 비율</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for i in range(countries|length) %}
+                <tr>
+                    <td>{{ countries[i] }}</td>
+                    <td>{{ prices[i]|round(1) }}</td>
+                    <td>{{ norm_prices[i]|round(1) }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="export-format">
+    <h3>한국어 형식 수출 가격 비교</h3>
+    
+    <div class="format-box">
+        <pre>
+{% for i in range(countries|length) %}{{ countries[i] }} → 미국: {{ norm_prices[i]|round(0)|int }}
+{% endfor %}</pre>
+    </div>
+</section>
+
+<section class="price-factors">
+    <h3>수출 가격 구성 요소</h3>
+    
+    <div class="factor-grid">
+        <div class="factor-card">
+            <h4>제조 비용</h4>
+            <p>기업세율, 이자율, 노동 비용, 토지/공장 임대 비용, 전기/유틸리티 비용, 물류 및 현지 운송 비용, 환율 변동성 및 인플레이션을 고려한 종합 제조 비용입니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>미국으로의 화물 비용</h4>
+            <p>각 국가에서 미국으로 제품을 운송하는 데 드는 국제 화물 비용으로, 거리와 운송 방식에 따라 달라집니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>미국 관세</h4>
+            <p>미국이 각 국가의 제품에 부과하는 관세로, 트럼프 행정부의 최신 관세 정책이 반영되어 있습니다.</p>
+        </div>
+        
+        <div class="factor-card">
+            <h4>무역 협정 혜택</h4>
+            <p>한-미 FTA, USMCA 등 무역 협정에 따른 관세 감면 혜택으로, 일부 국가는 관세가 크게 감소합니다.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('priceChart').getContext('2d');
+    
+    const priceChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ countries|tojson }},
+            datasets: [{
+                label: '수출 가격 지수 (한국 = 100)',
+                data: {{ norm_prices|tojson }},
+                backgroundColor: Array({{ countries|length }}).fill('rgba(255, 159, 64, 0.6)'),
+                borderColor: Array({{ countries|length }}).fill('rgba(255, 159, 64, 1)'),
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: '가격 지수 (대한민국 = 100)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: '국가'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: '{{ selected_category }} 수출 가격 지수 비교'
+                }
+            }
+        }
+    });
+    
+    // 한국 막대 강조
+    if (priceChart.data.labels.includes('대한민국')) {
+        const krIndex = priceChart.data.labels.indexOf('대한민국');
+        priceChart.data.datasets[0].backgroundColor[krIndex] = 'rgba(54, 162, 235, 0.6)';
+        priceChart.data.datasets[0].borderColor[krIndex] = 'rgba(54, 162, 235, 1)';
+        priceChart.update();
+    }
+});
+</script>
+{% endblock %}

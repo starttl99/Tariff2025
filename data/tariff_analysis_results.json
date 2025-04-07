@@ -1,0 +1,354 @@
+{
+  "analysis_date": "2025-04-03 21:52:56",
+  "documents": [
+    {
+      "name": "미국관세부과현황0403_최종.pptx",
+      "type": "pptx",
+      "analysis_result": {
+        "document_name": "미국관세부과현황0403_최종.pptx",
+        "analysis_date": "2025-04-03 21:52:56",
+        "tariff_policies": [
+          "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중",
+          "▶ 자동차 및 부품 관세 부과(변경)\n미국 관세부과 일정\n자동차 \n주요 부품▶\n효성모터\n주요부품에\n미해당\n상호관세적용\n※ 효성전기 수출 모터 : 현재 ~4/4일(0%), 4/5일~4/8일(10%), 4/9일(26%)~\nBARE/FLANGE MOTER(8501.31-6000) \nFAN MOTOR(8414-59.6595)"
+        ],
+        "country_specific_tariffs": {
+          "KR": {
+            "country_code": "KR",
+            "country_name": "대한민국",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "JP": {
+            "country_code": "JP",
+            "country_name": "일본",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "CN": {
+            "country_code": "CN",
+            "country_name": "중국",
+            "tariff_rates": [],
+            "notes": [
+              "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중"
+            ]
+          },
+          "IN": {
+            "country_code": "IN",
+            "country_name": "인도",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "TH": {
+            "country_code": "TH",
+            "country_name": "태국",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "VN": {
+            "country_code": "VN",
+            "country_name": "베트남",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "TW": {
+            "country_code": "TW",
+            "country_name": "대만",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "EU": {
+            "country_code": "EU",
+            "country_name": "유럽연합",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "MX": {
+            "country_code": "MX",
+            "country_name": "멕시코",
+            "tariff_rates": [],
+            "notes": []
+          }
+        },
+        "hs_code_tariffs": {
+          "8501.31": {
+            "rates": [],
+            "context": [
+              "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가"
+            ]
+          },
+          "8414.59": {
+            "rates": [],
+            "context": [
+              "준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "2025-05930.pdf",
+      "type": "pdf",
+      "analysis_result": {
+        "document_name": "2025-05930.pdf",
+        "analysis_date": "2025-04-03 21:52:56",
+        "tariff_policies": [
+          "In addition, the 25 percent \ntariff shall be applied retroactively (from April 3, 2025, \nto the date of the inaccurate overstatement) and \nprospectively (from the date of the inaccurate \noverstatement to the date the importer corrects the \noverstatement, as verified by CBP) to the full value of all \nautomobiles of the same model imported by the same \nimporter",
+          "After considering the current information newly provided \nby the Secretary, among other things, I find that imports of \nautomobiles and certain automobile parts continue to threaten to \nimpair the national security of the United States and deem it \nnecessary and appropriate to impose tariffs, as defined below, \nto adjust imports of automobiles and certain automobile parts so \nthat such imports will not threaten to impair national security",
+          "content in each model \nimported into the United States",
+          "content, the 25 percent tariff shall apply to the full \nvalue of the automobile, regardless of the actual U.S",
+          "Customs and Border Protection (“CBP”) regulations, \nexcept that duties under subheading 9802.00.60 shall be assessed based upon the full \nvalue of the imported article",
+          "Based on the \nfacts considered in that investigation, the Secretary found and \nadvised me of his opinion that automobiles and certain \nautomobile parts are being imported into the United States in \nsuch quantities and under such circumstances as to threaten to \nimpair the national security of the United States",
+          "7\nto be included within the scope of the tariffs described in \nclause (1) of this proclamation shall be so included on or \nafter 12:01 a.m",
+          "content in each vehicle or light truck imported \ninto the United States",
+          "Section 232 provides that, in this situation, the \nPresident shall take such other actions as the President deems \nnecessary to adjust the imports of the relevant article so that \nsuch imports will not threaten to impair national security",
+          "The Secretary also shall, \nfrom time to time, in consultation with any senior \nexecutive branch officials the Secretary deems appropriate, \nreview the status of such imports with respect to national \nsecurity",
+          "Except as provided for in subdivision (d) to this note, for any such products that are \neligible for special tariff treatment under any of the free trade agreements or preference \nprograms listed in general note 3(c)(i) to the tariff schedule, the duty provided in heading \n9903.94.01 shall be collected in addition to any special rate of duty otherwise applicable \nunder the appropriate tariff subheading",
+          "note 33 to subchapter III of chapter 99 of the Harmonized Tariff Schedule of the \nUnited States (HTSUS) is modified by inserting in numerical order:\n“(f) Except as provided for in heading 9903.94.06, heading 9903.94.05 provides the \nordinary customs duty treatment applicable to all entries of automobile parts from all \ncountries classifiable in the headings or subheadings enumerated in subdivision (g) of \nthis note",
+          "On February 17, 2019, the Secretary of Commerce \n(Secretary) transmitted to me a report on his investigation into \nthe effects of imports of passenger vehicles (sedans, sport \nutility vehicles, crossover utility vehicles, minivans, and \ncargo vans) and light trucks (collectively, automobiles) and \ncertain automobile parts (engines and engine parts, \ntransmissions and powertrain parts, and electrical components) \n(collectively, automobile parts) on the national security of the \nUnited States under section 232 of the Trade Expansion Act of \n1962, as amended (19 U.S.C",
+          "The following new note 33 to subchapter III of chapter 99 of the Harmonized Tariff \nSchedule of the United States (HTSUS) is inserted in numerical order:\n“33",
+          "12\n8501.52 8507.10 8507.60\n8507.90.40 8507.90.80 8511.10.0000 \n8511.20.00 8511.30.0040 8511.30.0080\n8511.40.00 8511.50.00 8511.80.20\n8511.80.60 8511.90.6020 8511.90.6040\n8512.20.20 8512.20.40 8512.30.00\n8512.40.20 8512.40.40 8512.90.20\n8512.90.60 8512.90.70 8519.81.20\n8525.60.1010 8527.21 8527.29\n8536.41.0005 8537.10 8537.20\n8539.10.0010 8539.10.0050 8544.30.00\n8706.00.03 8706.00.05 8706.00.15\n8706.00.25 8707 8707.10.0020\n8707.10.0040 8707.90.5020 8707.90.5040\n8707.90.5060 8707.90.5080 8708.10.30\n8708.10.60 8708.21.00 8708.22 \n8708.29 8708.30 8708.40.11\n8708.40.70 8708.40.75 8708.50\n8708.70 8708.80 8708.91\n8708.93.60 8708.93.75 8708.94\n8708.95 8708.99.53 8708.99.55\n8708.99.58 8708.99.68 8716.90.50\n9015.10 9029.10 9029.20.4080\n9401.20.00\n(h) Heading 9903.94.06 applies to all entries of articles classifiable under provisions of \nthe HTSUS enumerated subdivision (g) of this note\n(i) that are eligible for special tariff treatment under the United States-Mexico-\nCanada Agreement (USMCA), other than automobile knock-down kits or parts \ncompilations; or\n(ii)  that are not parts of passenger vehicles (sedans, sport utility vehicles, \ncrossover utility vehicles, minivans, and cargo vans) and light trucks.”\nb",
+          "To ensure that the imposition of tariffs on automobiles \nand certain automobile parts in this proclamation are not \ncircumvented and that the purpose of this action to eliminate \nthe threat to the national security of the United States by \nimports of automobiles and certain automobile parts is not \nundermined, I also deem it necessary and appropriate to \nestablish processes to identify and impose tariffs on additional \nautomobile parts, as further described below",
+          "10\nlight trucks to be eligible to apply the 25% ad valorem rates of duty exclusively to the \nvalue of the non-U.S",
+          "2483), authorizes the President to embody in the \nHarmonized Tariff Schedule of the United States (HTSUS) the \nsubstance of statutes affecting import treatment, and actions \nthereunder, including the removal, modification, continuance, or \nimposition of any rate of duty or other import restriction.",
+          "(8) Any automobile or automobile part, except those \neligible for admission under \"domestic status\" as defined \nin 19 CFR 146.43, that is subject to the duty imposed by \nthis proclamation and that is admitted into a United States \nforeign trade zone on or after the effective date of this \nproclamation, in accordance with clause (1) of this \nproclamation, must be admitted as \"privileged foreign \nstatus\" as defined in 19 CFR 146.41, and will be subject \nupon entry for consumption to any ad valorem rates of duty \nrelated to the classification under the applicable HTSUS \nsubheading",
+          "(a) Except as provided for in headings 9903.94.02, 9903.94.03, and 9903.94.04, \nheading 9903.94.01 provides the ordinary customs duty treatment applicable to all \nentries of passenger vehicles (sedans, sport utility vehicles, crossover utility vehicles, \nminivans, and cargo vans) and light trucks (hereinafter, automobiles) from all countries \nclassifiable in the headings or subheadings enumerated in subdivision (b) of this note",
+          "content of \nan automobile, as described in clause (2) of this \nproclamation, is inaccurate due to an overstatement of U.S",
+          "(9) The Secretary shall continue to monitor imports of \nautomobiles and automobile parts",
+          "(4) The ad valorem tariff of 25 percent described in \nclause (1) of this proclamation shall not apply to \nautomobile parts that qualify for preferential treatment \nunder the USMCA until such time that the Secretary, in \nconsultation with CBP, establishes a process to apply the \ntariff exclusively to the value of the non-U.S",
+          "In Proclamation 9888 of May 17, 2019 (Adjusting Imports \nof Automobiles and Automobile Parts Into the United States), I \nconcurred with the Secretary's finding in the February 17, 2019, \nreport that automobiles and certain automobile parts are being \nimported into the United States in such quantities and under \nsuch circumstances as to threaten to impair the national \nsecurity of the United States",
+          "No claim for entry or for any duty exemption or reduction shall be allowed for the \nautomobile parts in subdivision (g) of this note under a provision of chapter 99 that may \nset forth a lower rate of duty or provide duty-free treatment, taking into account \ninformation supplied by CBP, but any additional duty prescribed in any provision of this \nsubchapter or subchapter IV of chapter 99 shall be imposed in addition to the duty in \nheading 9903.94.05",
+          "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+          "No claim for entry or for any duty exemption or reduction shall be allowed for the \npassenger vehicles and light trucks enumerated in subdivision (b) of this note under a \nprovision of chapter 99 that may set forth a lower rate of duty or provide duty-free \ntreatment, taking into account information supplied by CBP, but any additional duty \nprescribed in any provision of this subchapter or subchapter IV of chapter 99 shall be \nimposed in addition to the duty in heading 9903.94.01",
+          "The Secretary shall also inform the President \nof any circumstance that, in the Secretary's opinion, might \nindicate that the increase in duty rate provided for in \nthis proclamation is no longer necessary",
+          "Thereafter, the Secretary may approve imports of such passenger vehicles or",
+          "The above ad valorem tariff is in addition to any \nother duties, fees, exactions, and charges applicable to such \nimported automobiles and certain automobile parts articles",
+          "Customs and Border Protection (“CBP”) regulations, except that duties under \nsubheading 9802.00.60 shall be assessed based upon the full value of the imported \narticle",
+          "(g) The rates of duty set forth in heading 9903.94.05 applies to parts of passenger \nvehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo \nvans) and light trucks classifiable in the provisions of the HTSUS enumerated in this \nsubdivision:\n4009.12.0020 4009.22.0020 4009.32.0020 \n4009.42.0020 4011.10.10 4011.10.50 \n4011.20.10 4012.19.40 4012.19.80 \n4012.20.60 4013.10.0010 4013.10.0020 \n4016.99.6010 7007.21.51 7009.10.00 \n7320.10 7320.20.10 8301.20.00 \n8302.10.30 8302.30 8407.31.00 \n8407.32 8407.33 8407.34 \n8408.20.20 8409.91.1040 8409.99.1040\n8413.30.10 8413.30.90 8413.91.10\n8413.91.9010 8414.30.8030 8414.59.30\n8414.59.6540 8414.80.05 8415.20.00\n8421.23.00 8421.32.00 8425.49.00\n8426.91.00 8431.10.0090 8471\n8482.10.10 8482.10.5044 8482.10.5048\n8482.20.0020 8482.20.0030 8482.20.0040\n8482.20.0061 8482.20.0070 8482.20.0081\n8482.40.00 8482.50.00 8483.10.1030\n8483.10.30 8501.32 8501.33 \n8501.34 8501.40 8501.51",
+          "(2) For automobiles that qualify for preferential \ntariff treatment under the USMCA, importers of such \nautomobiles may submit documentation to the Secretary \nidentifying the amount of U.S",
+          "Investments resulting from other efforts, such as \nlegislation, have also not yielded sufficient positive outcomes \nto eliminate the threat to national security from such imports",
+          "I also directed the United States \nTrade Representative (Trade Representative), in consultation \nwith other executive branch officials, to pursue negotiation of \nagreements to address the threatened impairment of the national \nsecurity of the United States with respect to imported This document is scheduled to be published in the\nFederal Register on 04/03/2025 and available online at\nhttps://federalregister.gov/d/2025-05930 , and on https://govinfo.gov",
+          "In Proclamation 9888, I also directed the Secretary to \nmonitor imports of automobiles and certain automobile parts and \ninform me of any circumstances that, in the Secretary's opinion, \nmight indicate the need for further action under section 232 \nwith respect to such imports",
+          "Thereafter, the Secretary may approve \nimports of such automobiles to be eligible to apply the ad \nvalorem tariff of 25 percent in clause (1) of this \nproclamation exclusively to the value of the non-U.S",
+          "(7) Within 90 days of the date of this proclamation, \nthe Secretary shall establish a process for including \nadditional automobile parts articles within the scope of \nthe tariffs described in clause (1) of this proclamation",
+          "The threat to national security posed by \nimports of automobiles and certain automobile parts remains and \nhas increased",
+          "(b) The rates of duty set forth in headings 9903.94.01, 9903.94.02, 9903.94.03, and \n9903.94.04, apply to all imported products classifiable in the provisions of the HTSUS \nenumerated in this subdivision:\n8703.22.01 8703.23.01 8703.24.01 \n8703.31.01 8703.32.01 8703.33.01 \n8703.40.00 8703.50.00 8703.60.00 \n8703.70.00 8703.80.00 8703.90.01 \n8704.21.01 8704.31.01 8704.41.00\n8704.51.00 8704.60.00\n(c) Heading 9903.94.02 applies to:\n(i) all entries of articles classifiable under provisions of the HTSUS enumerated in \nsubdivision (b) of this note, but that are not passenger vehicles (sedans, sport \nutility vehicles, crossover utility vehicles, minivans, and cargo vans) and light \ntrucks; as well as \n(ii) the U.S",
+          "In addition to inclusions made by the Secretary, this \nprocess shall provide for including additional automobile \nparts articles at the request of a domestic producer of an \nautomobile or automobile parts article, or an industry \nassociation representing one or more such producers, where \nthe request establishes that imports of additional \nautomobile parts articles have increased in a manner that \nthreatens to impair the national security or otherwise \nundermines the objectives set forth in any proclamation \nissued on the basis of the Secretary's February 17, 2019, \nreport or any additional information submitted to the \nPresident under clause (3) of Proclamation 9888 or clause \n(9) of this proclamation",
+          "For any passenger vehicle \nor light truck, as defined in subdivision (a) of this note, that is classified in one of the \nsubheadings of the HTSUS listed in subdivision (b) of this note and eligible for special \ntariff treatment under the United States-Mexico-Canada Agreement (USMCA), importers \nof such passenger vehicles or light trucks may submit documentation to the Secretary of \nCommerce identifying the amount of U.S",
+          "by inserting new headings 9903.94.01, 9903.94.02, 9903.94.03, and 9903.94.04 in \nnumerical sequence, with the material in the new heading inserted in the columns of the \nHTSUS labeled “Heading/Subheading”, “Article Description”, “Rates of Duty 1-General”, \n“Rates of Duty 1-Special” and “Rates of Duty 2”, respectively:\nRates of Duty\n1Heading/\nSubheadin\ngArticle Description\nGeneral Special2\n“9903.94.01 Except for 9903.94.02, 9903.94.03, \nand 9903.94.04, effective with \nrespect to entries on or after April 3, \n2025, passenger vehicles (sedans, \nsport utility vehicles, crossover utility \nvehicles, minivans, and cargo vans) \nand light trucks, as specified in note \n33 to this subchapter, as provided for \nin subdivision (b) of U.S",
+          "Any importer entering the passenger vehicle or light truck covered by this note under \nheadings 9903.94.03 shall provide any information that may be required, and in such \nform, as is deemed necessary by CBP in order to permit the administration of this \nheading",
+          "Except as provided for in subdivision (h) to this note, for any such products that are \neligible for special tariff treatment under any of the free trade agreements or preference \nprograms listed in general note 3(c)(i) to the tariff schedule, the duty provided in heading \n9903.94.05 shall be collected in addition to any special rate of duty otherwise applicable \nunder the appropriate tariff subheading",
+          "by inserting new headings 9903.94.05 and 9903.94.06, in numerical sequence, with the \nmaterial in the new heading inserted in the columns of the HTSUS labeled \n“Heading/Subheading”, “Article Description”, “Rates of Duty 1-General”, “Rates of Duty \n1-Special” and “Rates of Duty 2”, respectively:\nRates of Duty\n1Heading/\nSubheadin\ngArticle Description\nGeneral Special2\n“9903.94.05 Except for 9903.94.06, effective with \nrespect to entries on or after May 3, \n2025, automobile parts, as provided \nfor in subdivision (g) of U.S",
+          "No claim for entry or for any duty exemption or reduction \nshall be allowed for the passenger vehicles or light trucks enumerated in subdivision (b) \nof this note under a provision of chapter 99 that may set forth a lower rate of duty or \nprovide duty-free treatment, taking into account information supplied by CBP, but any \nadditional duty prescribed in any provision of this subchapter or subchapter IV of chapter \n99 shall be imposed in addition to the duty in heading 9903.94.03",
+          "TRUMP, President of the United \nStates of America, by the authority vested in me by the \nConstitution and the laws of the United States of America, \nincluding section 301 of title 3, United States Code; section \n604 of the Trade Act of 1974, as amended; and section 232 of the \nTrade Expansion Act of 1962, as amended, do hereby proclaim as \nfollows: \n(1) Except as otherwise provided in this proclamation, all \nimports of articles specified in Annex I to this proclamation or \nin any subsequent annex to this proclamation, as set out in a \nsubsequent notice in the Federal Register, shall be subject to a \n25 percent tariff with respect to goods entered for consumption \nor withdrawn from warehouse for consumption, on or after 12:01 \na.m",
+          "All antidumping, \ncountervailing, or other duties and charges applicable to such goods shall continue to be \nimposed in addition to the duty in heading 9903.94.03.”\n(e) Heading 9903.94.04 applies to all entries of passenger vehicles (sedans, sport utility \nvehicles, crossover utility vehicles, minivans, and cargo vans) and light trucks from all \ncountries classifiable in the headings or subheadings enumerated in subdivision (b) of \nthis note that were manufactured in a year at least 25 years prior to the year of the date \nof entry",
+          "Automobile parts, for this purpose, include engines and engine parts, \ntransmissions and powertrain parts, and electrical components, and parts of passenger \nvehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo \nvans) and light trucks classified under the HTS provisions enumerated in subdivision (g) \nof this note",
+          "(12) CBP may take any necessary or appropriate \nmeasures to administer the tariffs imposed by this \nproclamation"
+        ],
+        "country_specific_tariffs": {
+          "KR": {
+            "country_code": "KR",
+            "country_name": "대한민국",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "JP": {
+            "country_code": "JP",
+            "country_name": "일본",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "CN": {
+            "country_code": "CN",
+            "country_name": "중국",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "IN": {
+            "country_code": "IN",
+            "country_name": "인도",
+            "tariff_rates": [],
+            "notes": [
+              "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+              "IN WITNESS WHEREOF, I have hereunto set my hand this \ntwenty-sixth day of March, in the year of our Lord two thousand \ntwenty-five, and of the Independence of the United States of \nAmerica the two hundred and forty-ninth."
+            ]
+          },
+          "TH": {
+            "country_code": "TH",
+            "country_name": "태국",
+            "tariff_rates": [],
+            "notes": [
+              "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+              "4\nNOW, THEREFORE, I, DONALD J"
+            ]
+          },
+          "VN": {
+            "country_code": "VN",
+            "country_name": "베트남",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "TW": {
+            "country_code": "TW",
+            "country_name": "대만",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "EU": {
+            "country_code": "EU",
+            "country_name": "유럽연합",
+            "tariff_rates": [],
+            "notes": []
+          },
+          "MX": {
+            "country_code": "MX",
+            "country_name": "멕시코",
+            "tariff_rates": [],
+            "notes": []
+          }
+        },
+        "hs_code_tariffs": {
+          "8414.59": {
+            "rates": [],
+            "context": [
+              "34 \n8408.20.20 8409.91.1040 8409.99.1040\n8413.30.10 8413.30.90 8413.91.10\n8413.91.9010 8414.30.8030 8414.59.30\n8414.59.6540 8414.80.05 8415.20.00\n8421.23.00 8421.32.00 8425.49.00\n8426.91.00 8431.10.00"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "consolidated_tariff_policies": [
+    "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중",
+    "In addition, the 25 percent \ntariff shall be applied retroactively (from April 3, 2025, \nto the date of the inaccurate overstatement) and \nprospectively (from the date of the inaccurate \noverstatement to the date the importer corrects the \noverstatement, as verified by CBP) to the full value of all \nautomobiles of the same model imported by the same \nimporter",
+    "After considering the current information newly provided \nby the Secretary, among other things, I find that imports of \nautomobiles and certain automobile parts continue to threaten to \nimpair the national security of the United States and deem it \nnecessary and appropriate to impose tariffs, as defined below, \nto adjust imports of automobiles and certain automobile parts so \nthat such imports will not threaten to impair national security",
+    "content in each model \nimported into the United States",
+    "content, the 25 percent tariff shall apply to the full \nvalue of the automobile, regardless of the actual U.S",
+    "Customs and Border Protection (“CBP”) regulations, \nexcept that duties under subheading 9802.00.60 shall be assessed based upon the full \nvalue of the imported article",
+    "Based on the \nfacts considered in that investigation, the Secretary found and \nadvised me of his opinion that automobiles and certain \nautomobile parts are being imported into the United States in \nsuch quantities and under such circumstances as to threaten to \nimpair the national security of the United States",
+    "7\nto be included within the scope of the tariffs described in \nclause (1) of this proclamation shall be so included on or \nafter 12:01 a.m",
+    "▶ 자동차 및 부품 관세 부과(변경)\n미국 관세부과 일정\n자동차 \n주요 부품▶\n효성모터\n주요부품에\n미해당\n상호관세적용\n※ 효성전기 수출 모터 : 현재 ~4/4일(0%), 4/5일~4/8일(10%), 4/9일(26%)~\nBARE/FLANGE MOTER(8501.31-6000) \nFAN MOTOR(8414-59.6595)",
+    "content in each vehicle or light truck imported \ninto the United States",
+    "Section 232 provides that, in this situation, the \nPresident shall take such other actions as the President deems \nnecessary to adjust the imports of the relevant article so that \nsuch imports will not threaten to impair national security",
+    "The Secretary also shall, \nfrom time to time, in consultation with any senior \nexecutive branch officials the Secretary deems appropriate, \nreview the status of such imports with respect to national \nsecurity",
+    "Except as provided for in subdivision (d) to this note, for any such products that are \neligible for special tariff treatment under any of the free trade agreements or preference \nprograms listed in general note 3(c)(i) to the tariff schedule, the duty provided in heading \n9903.94.01 shall be collected in addition to any special rate of duty otherwise applicable \nunder the appropriate tariff subheading",
+    "note 33 to subchapter III of chapter 99 of the Harmonized Tariff Schedule of the \nUnited States (HTSUS) is modified by inserting in numerical order:\n“(f) Except as provided for in heading 9903.94.06, heading 9903.94.05 provides the \nordinary customs duty treatment applicable to all entries of automobile parts from all \ncountries classifiable in the headings or subheadings enumerated in subdivision (g) of \nthis note",
+    "On February 17, 2019, the Secretary of Commerce \n(Secretary) transmitted to me a report on his investigation into \nthe effects of imports of passenger vehicles (sedans, sport \nutility vehicles, crossover utility vehicles, minivans, and \ncargo vans) and light trucks (collectively, automobiles) and \ncertain automobile parts (engines and engine parts, \ntransmissions and powertrain parts, and electrical components) \n(collectively, automobile parts) on the national security of the \nUnited States under section 232 of the Trade Expansion Act of \n1962, as amended (19 U.S.C",
+    "12\n8501.52 8507.10 8507.60\n8507.90.40 8507.90.80 8511.10.0000 \n8511.20.00 8511.30.0040 8511.30.0080\n8511.40.00 8511.50.00 8511.80.20\n8511.80.60 8511.90.6020 8511.90.6040\n8512.20.20 8512.20.40 8512.30.00\n8512.40.20 8512.40.40 8512.90.20\n8512.90.60 8512.90.70 8519.81.20\n8525.60.1010 8527.21 8527.29\n8536.41.0005 8537.10 8537.20\n8539.10.0010 8539.10.0050 8544.30.00\n8706.00.03 8706.00.05 8706.00.15\n8706.00.25 8707 8707.10.0020\n8707.10.0040 8707.90.5020 8707.90.5040\n8707.90.5060 8707.90.5080 8708.10.30\n8708.10.60 8708.21.00 8708.22 \n8708.29 8708.30 8708.40.11\n8708.40.70 8708.40.75 8708.50\n8708.70 8708.80 8708.91\n8708.93.60 8708.93.75 8708.94\n8708.95 8708.99.53 8708.99.55\n8708.99.58 8708.99.68 8716.90.50\n9015.10 9029.10 9029.20.4080\n9401.20.00\n(h) Heading 9903.94.06 applies to all entries of articles classifiable under provisions of \nthe HTSUS enumerated subdivision (g) of this note\n(i) that are eligible for special tariff treatment under the United States-Mexico-\nCanada Agreement (USMCA), other than automobile knock-down kits or parts \ncompilations; or\n(ii)  that are not parts of passenger vehicles (sedans, sport utility vehicles, \ncrossover utility vehicles, minivans, and cargo vans) and light trucks.”\nb",
+    "The following new note 33 to subchapter III of chapter 99 of the Harmonized Tariff \nSchedule of the United States (HTSUS) is inserted in numerical order:\n“33",
+    "To ensure that the imposition of tariffs on automobiles \nand certain automobile parts in this proclamation are not \ncircumvented and that the purpose of this action to eliminate \nthe threat to the national security of the United States by \nimports of automobiles and certain automobile parts is not \nundermined, I also deem it necessary and appropriate to \nestablish processes to identify and impose tariffs on additional \nautomobile parts, as further described below",
+    "10\nlight trucks to be eligible to apply the 25% ad valorem rates of duty exclusively to the \nvalue of the non-U.S",
+    "2483), authorizes the President to embody in the \nHarmonized Tariff Schedule of the United States (HTSUS) the \nsubstance of statutes affecting import treatment, and actions \nthereunder, including the removal, modification, continuance, or \nimposition of any rate of duty or other import restriction.",
+    "(8) Any automobile or automobile part, except those \neligible for admission under \"domestic status\" as defined \nin 19 CFR 146.43, that is subject to the duty imposed by \nthis proclamation and that is admitted into a United States \nforeign trade zone on or after the effective date of this \nproclamation, in accordance with clause (1) of this \nproclamation, must be admitted as \"privileged foreign \nstatus\" as defined in 19 CFR 146.41, and will be subject \nupon entry for consumption to any ad valorem rates of duty \nrelated to the classification under the applicable HTSUS \nsubheading",
+    "(a) Except as provided for in headings 9903.94.02, 9903.94.03, and 9903.94.04, \nheading 9903.94.01 provides the ordinary customs duty treatment applicable to all \nentries of passenger vehicles (sedans, sport utility vehicles, crossover utility vehicles, \nminivans, and cargo vans) and light trucks (hereinafter, automobiles) from all countries \nclassifiable in the headings or subheadings enumerated in subdivision (b) of this note",
+    "content of \nan automobile, as described in clause (2) of this \nproclamation, is inaccurate due to an overstatement of U.S",
+    "(9) The Secretary shall continue to monitor imports of \nautomobiles and automobile parts",
+    "(4) The ad valorem tariff of 25 percent described in \nclause (1) of this proclamation shall not apply to \nautomobile parts that qualify for preferential treatment \nunder the USMCA until such time that the Secretary, in \nconsultation with CBP, establishes a process to apply the \ntariff exclusively to the value of the non-U.S",
+    "In Proclamation 9888 of May 17, 2019 (Adjusting Imports \nof Automobiles and Automobile Parts Into the United States), I \nconcurred with the Secretary's finding in the February 17, 2019, \nreport that automobiles and certain automobile parts are being \nimported into the United States in such quantities and under \nsuch circumstances as to threaten to impair the national \nsecurity of the United States",
+    "No claim for entry or for any duty exemption or reduction shall be allowed for the \nautomobile parts in subdivision (g) of this note under a provision of chapter 99 that may \nset forth a lower rate of duty or provide duty-free treatment, taking into account \ninformation supplied by CBP, but any additional duty prescribed in any provision of this \nsubchapter or subchapter IV of chapter 99 shall be imposed in addition to the duty in \nheading 9903.94.05",
+    "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+    "No claim for entry or for any duty exemption or reduction shall be allowed for the \npassenger vehicles and light trucks enumerated in subdivision (b) of this note under a \nprovision of chapter 99 that may set forth a lower rate of duty or provide duty-free \ntreatment, taking into account information supplied by CBP, but any additional duty \nprescribed in any provision of this subchapter or subchapter IV of chapter 99 shall be \nimposed in addition to the duty in heading 9903.94.01",
+    "The Secretary shall also inform the President \nof any circumstance that, in the Secretary's opinion, might \nindicate that the increase in duty rate provided for in \nthis proclamation is no longer necessary",
+    "Thereafter, the Secretary may approve imports of such passenger vehicles or",
+    "The above ad valorem tariff is in addition to any \nother duties, fees, exactions, and charges applicable to such \nimported automobiles and certain automobile parts articles",
+    "Customs and Border Protection (“CBP”) regulations, except that duties under \nsubheading 9802.00.60 shall be assessed based upon the full value of the imported \narticle",
+    "(g) The rates of duty set forth in heading 9903.94.05 applies to parts of passenger \nvehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo \nvans) and light trucks classifiable in the provisions of the HTSUS enumerated in this \nsubdivision:\n4009.12.0020 4009.22.0020 4009.32.0020 \n4009.42.0020 4011.10.10 4011.10.50 \n4011.20.10 4012.19.40 4012.19.80 \n4012.20.60 4013.10.0010 4013.10.0020 \n4016.99.6010 7007.21.51 7009.10.00 \n7320.10 7320.20.10 8301.20.00 \n8302.10.30 8302.30 8407.31.00 \n8407.32 8407.33 8407.34 \n8408.20.20 8409.91.1040 8409.99.1040\n8413.30.10 8413.30.90 8413.91.10\n8413.91.9010 8414.30.8030 8414.59.30\n8414.59.6540 8414.80.05 8415.20.00\n8421.23.00 8421.32.00 8425.49.00\n8426.91.00 8431.10.0090 8471\n8482.10.10 8482.10.5044 8482.10.5048\n8482.20.0020 8482.20.0030 8482.20.0040\n8482.20.0061 8482.20.0070 8482.20.0081\n8482.40.00 8482.50.00 8483.10.1030\n8483.10.30 8501.32 8501.33 \n8501.34 8501.40 8501.51",
+    "(2) For automobiles that qualify for preferential \ntariff treatment under the USMCA, importers of such \nautomobiles may submit documentation to the Secretary \nidentifying the amount of U.S",
+    "Investments resulting from other efforts, such as \nlegislation, have also not yielded sufficient positive outcomes \nto eliminate the threat to national security from such imports",
+    "I also directed the United States \nTrade Representative (Trade Representative), in consultation \nwith other executive branch officials, to pursue negotiation of \nagreements to address the threatened impairment of the national \nsecurity of the United States with respect to imported This document is scheduled to be published in the\nFederal Register on 04/03/2025 and available online at\nhttps://federalregister.gov/d/2025-05930 , and on https://govinfo.gov",
+    "In Proclamation 9888, I also directed the Secretary to \nmonitor imports of automobiles and certain automobile parts and \ninform me of any circumstances that, in the Secretary's opinion, \nmight indicate the need for further action under section 232 \nwith respect to such imports",
+    "Thereafter, the Secretary may approve \nimports of such automobiles to be eligible to apply the ad \nvalorem tariff of 25 percent in clause (1) of this \nproclamation exclusively to the value of the non-U.S",
+    "(7) Within 90 days of the date of this proclamation, \nthe Secretary shall establish a process for including \nadditional automobile parts articles within the scope of \nthe tariffs described in clause (1) of this proclamation",
+    "The threat to national security posed by \nimports of automobiles and certain automobile parts remains and \nhas increased",
+    "(b) The rates of duty set forth in headings 9903.94.01, 9903.94.02, 9903.94.03, and \n9903.94.04, apply to all imported products classifiable in the provisions of the HTSUS \nenumerated in this subdivision:\n8703.22.01 8703.23.01 8703.24.01 \n8703.31.01 8703.32.01 8703.33.01 \n8703.40.00 8703.50.00 8703.60.00 \n8703.70.00 8703.80.00 8703.90.01 \n8704.21.01 8704.31.01 8704.41.00\n8704.51.00 8704.60.00\n(c) Heading 9903.94.02 applies to:\n(i) all entries of articles classifiable under provisions of the HTSUS enumerated in \nsubdivision (b) of this note, but that are not passenger vehicles (sedans, sport \nutility vehicles, crossover utility vehicles, minivans, and cargo vans) and light \ntrucks; as well as \n(ii) the U.S",
+    "In addition to inclusions made by the Secretary, this \nprocess shall provide for including additional automobile \nparts articles at the request of a domestic producer of an \nautomobile or automobile parts article, or an industry \nassociation representing one or more such producers, where \nthe request establishes that imports of additional \nautomobile parts articles have increased in a manner that \nthreatens to impair the national security or otherwise \nundermines the objectives set forth in any proclamation \nissued on the basis of the Secretary's February 17, 2019, \nreport or any additional information submitted to the \nPresident under clause (3) of Proclamation 9888 or clause \n(9) of this proclamation",
+    "For any passenger vehicle \nor light truck, as defined in subdivision (a) of this note, that is classified in one of the \nsubheadings of the HTSUS listed in subdivision (b) of this note and eligible for special \ntariff treatment under the United States-Mexico-Canada Agreement (USMCA), importers \nof such passenger vehicles or light trucks may submit documentation to the Secretary of \nCommerce identifying the amount of U.S",
+    "by inserting new headings 9903.94.01, 9903.94.02, 9903.94.03, and 9903.94.04 in \nnumerical sequence, with the material in the new heading inserted in the columns of the \nHTSUS labeled “Heading/Subheading”, “Article Description”, “Rates of Duty 1-General”, \n“Rates of Duty 1-Special” and “Rates of Duty 2”, respectively:\nRates of Duty\n1Heading/\nSubheadin\ngArticle Description\nGeneral Special2\n“9903.94.01 Except for 9903.94.02, 9903.94.03, \nand 9903.94.04, effective with \nrespect to entries on or after April 3, \n2025, passenger vehicles (sedans, \nsport utility vehicles, crossover utility \nvehicles, minivans, and cargo vans) \nand light trucks, as specified in note \n33 to this subchapter, as provided for \nin subdivision (b) of U.S",
+    "Any importer entering the passenger vehicle or light truck covered by this note under \nheadings 9903.94.03 shall provide any information that may be required, and in such \nform, as is deemed necessary by CBP in order to permit the administration of this \nheading",
+    "Except as provided for in subdivision (h) to this note, for any such products that are \neligible for special tariff treatment under any of the free trade agreements or preference \nprograms listed in general note 3(c)(i) to the tariff schedule, the duty provided in heading \n9903.94.05 shall be collected in addition to any special rate of duty otherwise applicable \nunder the appropriate tariff subheading",
+    "by inserting new headings 9903.94.05 and 9903.94.06, in numerical sequence, with the \nmaterial in the new heading inserted in the columns of the HTSUS labeled \n“Heading/Subheading”, “Article Description”, “Rates of Duty 1-General”, “Rates of Duty \n1-Special” and “Rates of Duty 2”, respectively:\nRates of Duty\n1Heading/\nSubheadin\ngArticle Description\nGeneral Special2\n“9903.94.05 Except for 9903.94.06, effective with \nrespect to entries on or after May 3, \n2025, automobile parts, as provided \nfor in subdivision (g) of U.S",
+    "No claim for entry or for any duty exemption or reduction \nshall be allowed for the passenger vehicles or light trucks enumerated in subdivision (b) \nof this note under a provision of chapter 99 that may set forth a lower rate of duty or \nprovide duty-free treatment, taking into account information supplied by CBP, but any \nadditional duty prescribed in any provision of this subchapter or subchapter IV of chapter \n99 shall be imposed in addition to the duty in heading 9903.94.03",
+    "TRUMP, President of the United \nStates of America, by the authority vested in me by the \nConstitution and the laws of the United States of America, \nincluding section 301 of title 3, United States Code; section \n604 of the Trade Act of 1974, as amended; and section 232 of the \nTrade Expansion Act of 1962, as amended, do hereby proclaim as \nfollows: \n(1) Except as otherwise provided in this proclamation, all \nimports of articles specified in Annex I to this proclamation or \nin any subsequent annex to this proclamation, as set out in a \nsubsequent notice in the Federal Register, shall be subject to a \n25 percent tariff with respect to goods entered for consumption \nor withdrawn from warehouse for consumption, on or after 12:01 \na.m",
+    "All antidumping, \ncountervailing, or other duties and charges applicable to such goods shall continue to be \nimposed in addition to the duty in heading 9903.94.03.”\n(e) Heading 9903.94.04 applies to all entries of passenger vehicles (sedans, sport utility \nvehicles, crossover utility vehicles, minivans, and cargo vans) and light trucks from all \ncountries classifiable in the headings or subheadings enumerated in subdivision (b) of \nthis note that were manufactured in a year at least 25 years prior to the year of the date \nof entry",
+    "Automobile parts, for this purpose, include engines and engine parts, \ntransmissions and powertrain parts, and electrical components, and parts of passenger \nvehicles (sedans, sport utility vehicles, crossover utility vehicles, minivans, and cargo \nvans) and light trucks classified under the HTS provisions enumerated in subdivision (g) \nof this note",
+    "(12) CBP may take any necessary or appropriate \nmeasures to administer the tariffs imposed by this \nproclamation"
+  ],
+  "country_specific_tariffs": {
+    "KR": {
+      "country_code": "KR",
+      "country_name": "대한민국",
+      "tariff_rates": [],
+      "notes": []
+    },
+    "JP": {
+      "country_code": "JP",
+      "country_name": "일본",
+      "tariff_rates": [],
+      "notes": []
+    },
+    "CN": {
+      "country_code": "CN",
+      "country_name": "중국",
+      "tariff_rates": [],
+      "notes": [
+        "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중"
+      ]
+    },
+    "IN": {
+      "country_code": "IN",
+      "country_name": "인도",
+      "tariff_rates": [],
+      "notes": [
+        "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+        "IN WITNESS WHEREOF, I have hereunto set my hand this \ntwenty-sixth day of March, in the year of our Lord two thousand \ntwenty-five, and of the Independence of the United States of \nAmerica the two hundred and forty-ninth."
+      ]
+    },
+    "TH": {
+      "country_code": "TH",
+      "country_name": "태국",
+      "tariff_rates": [],
+      "notes": [
+        "ADJUSTING IMPORTS OF AUTOMOBILES AND AUTOMOBILE \nPARTS INTO THE UNITED STATES\n10908\n- - - - - - -\nBY THE PRESIDENT OF THE UNITED STATES OF AMERICA\nA PROCLAMATION\n1",
+        "4\nNOW, THEREFORE, I, DONALD J"
+      ]
+    },
+    "VN": {
+      "country_code": "VN",
+      "country_name": "베트남",
+      "tariff_rates": [],
+      "notes": []
+    },
+    "TW": {
+      "country_code": "TW",
+      "country_name": "대만",
+      "tariff_rates": [],
+      "notes": []
+    },
+    "EU": {
+      "country_code": "EU",
+      "country_name": "유럽연합",
+      "tariff_rates": [],
+      "notes": []
+    },
+    "MX": {
+      "country_code": "MX",
+      "country_name": "멕시코",
+      "tariff_rates": [],
+      "notes": []
+    }
+  },
+  "hs_code_tariffs": {
+    "8501.31": {
+      "rates": [],
+      "context": [
+        "MOTOR (BARE & FAN ) 기준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가"
+      ]
+    },
+    "8414.59": {
+      "rates": [],
+      "context": [
+        "준 국가간 관세율(상호관세 4/9일부터 적용)\n▶ BARE & FLANGE MOTOR (8501.31) 기준(미국HSCODE : 8501.30-6000) \n▶ FAN MOTOR (8414.59) 기준 (미국HSCODE : 8414.59-6595) \n-중국은 보복관세가 많아 합산여부는 추가 확인중\n-중국은 보복관세가 많아 합산여부는 추가 확인중",
+        "34 \n8408.20.20 8409.91.1040 8409.99.1040\n8413.30.10 8413.30.90 8413.91.10\n8413.91.9010 8414.30.8030 8414.59.30\n8414.59.6540 8414.80.05 8415.20.00\n8421.23.00 8421.32.00 8425.49.00\n8426.91.00 8431.10.00"
+      ]
+    }
+  }
+}

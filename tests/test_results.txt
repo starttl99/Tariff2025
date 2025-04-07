@@ -1,0 +1,18 @@
+test_collect_tariff_data (__main__.TariffDataCollectorTest)
+관세 데이터 수집 기능 테스트 ... FAIL
+test_tariff_policy_updates (__main__.TariffDataCollectorTest)
+관세 정책 업데이트 정보 생성 기능 테스트 ... ok
+test_collect_all_cost_data (__main__.ManufacturingCostSimulatorTest)
+모든 비용 데이터 수집 기능 테스트 ... ok
+test_manufacturing_cost_index (__main__.ManufacturingCostSimulatorTest)
+제조 비용 지수 계산 기능 테스트 ... ok
+test_product_specific_cost_simulation (__main__.ManufacturingCostSimulatorTest)
+제품별 제조 비용 시뮬레이션 기능 테스트 ... ok
+test_calculate_export_prices (__main__.ExportPriceCalculatorTest)
+수출 가격 계산 기능 테스트 ... ok
+test_export_price_index (__main__.ExportPriceCalculatorTest)
+수출 가격 지수 계산 기능 테스트 ... ok
+test_korean_format_output (__main__.ExportPriceCalculatorTest)
+한국어 형식 출력 기능 테스트 ... ok
+test_flask_app (__main__.DashboardAppTest)
+Flask 애플리케이션 테스트 ... 

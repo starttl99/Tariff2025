@@ -1,0 +1,36 @@
+{
+  "source": "백악관 정책 정보 (일반)",
+  "last_updated": "2025-04-03",
+  "tariff_policies": [
+    {
+      "title": "중국 수입품에 대한 추가 관세",
+      "description": "트럼프 행정부는 중국 수입품에 대해 기존 관세에 추가로 25%의 관세를 부과하기로 결정했습니다.",
+      "affected_countries": [
+        "CN"
+      ],
+      "effective_date": "2025-01-01"
+    },
+    {
+      "title": "자동차 및 자동차 부품에 대한 관세",
+      "description": "자동차 및 자동차 부품에 대해 국가별로 차등화된 관세율을 적용합니다. 한국, EU, 멕시코는 무역협정으로 인해 관세 혜택을 받습니다.",
+      "affected_countries": [
+        "JP",
+        "CN",
+        "IN",
+        "TH",
+        "VN",
+        "TW"
+      ],
+      "effective_date": "2025-02-15"
+    },
+    {
+      "title": "전기 모터 및 부품에 대한 관세 정책",
+      "description": "전기 모터(HS 8501.31) 및 팬, 블로워(HS 8414.59)에 대한 특별 관세 정책이 시행됩니다.",
+      "affected_hs_codes": [
+        "8501.31",
+        "8414.59"
+      ],
+      "effective_date": "2025-03-01"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}최신 미국 관세 정책 요약 - 미국 관세 정책 추적 및 비용 비교 도구{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h2>최신 미국 관세 정책 요약</h2>
+    <p>트럼프 행정부의 최신 관세 정책 변화와 9개 주요 국가에 대한 영향을 확인하세요.</p>
+</section>
+
+<section class="policy-updates">
+    <h3>최근 관세 정책 업데이트</h3>
+    
+    {% if policy_updates %}
+        {% for update in policy_updates %}
+        <div class="policy-card">
+            <h4>{{ update.title }}</h4>
+            <p class="date">{{ update.date }}</p>
+            <p class="summary">{{ update.summary }}</p>
+            <div class="details">
+                <p><strong>영향 받는 HS 코드:</strong> {{ update.affected_hs_codes|join(', ') }}</p>
+                <p><strong>발효일:</strong> {{ update.effective_date }}</p>
+                <p><strong>출처:</strong> {{ update.source }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>최근 관세 정책 업데이트 정보가 없습니다.</p>
+    {% endif %}
+</section>
+
+<section class="country-impact">
+    <h3>국가별 관세 영향</h3>
+    
+    <div class="country-grid">
+        <div class="country-card">
+            <h4>🇰🇷 대한민국</h4>
+            <p><strong>주요 영향:</strong> 한-미 FTA로 대부분의 자동차 부품에 대한 관세 면제 혜택을 유지하고 있으나, 일부 품목에 대한 원산지 규정 개정 논의가 진행 중입니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708, 8507, 8501</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇯🇵 일본</h4>
+            <p><strong>주요 영향:</strong> 자동차 및 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었습니다. 미-일 무역 불균형 해소를 위한 협상이 예정되어 있습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8703, 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇨🇳 중국</h4>
+            <p><strong>주요 영향:</strong> 기존 301조 관세에 더해 자동차 부품에 대한 25% 추가 관세가 부과되어 총 50% 이상의 관세율이 적용됩니다. 전기차 배터리에 대한 추가 관세도 검토 중입니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708, 8507</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇮🇳 인도</h4>
+            <p><strong>주요 영향:</strong> 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇹🇭 태국</h4>
+            <p><strong>주요 영향:</strong> 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇻🇳 베트남</h4>
+            <p><strong>주요 영향:</strong> 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇹🇼 대만</h4>
+            <p><strong>주요 영향:</strong> 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇪🇺 유럽연합</h4>
+            <p><strong>주요 영향:</strong> 자동차 부품에 대한 25% 추가 관세 부과로 수출 경쟁력이 약화되었으나, 관세 면제 연장 협상이 진행 중입니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8703, 8708</p>
+        </div>
+        
+        <div class="country-card">
+            <h4>🇲🇽 멕시코</h4>
+            <p><strong>주요 영향:</strong> USMCA 협정으로 대부분의 자동차 부품에 대한 관세 면제 혜택을 유지하고 있어 상대적으로 유리한 위치에 있습니다.</p>
+            <p><strong>주요 HS 코드:</strong> 8708</p>
+        </div>
+    </div>
+</section>
+
+<section class="political-analysis">
+    <h3>정치적/경제적 배경 분석</h3>
+    
+    <div class="analysis-card">
+        <h4>미국 제조업 활성화 정책</h4>
+        <p>트럼프 행정부는 '미국 우선주의(America First)' 정책의 일환으로 자국 제조업 보호 및 활성화를 위해 외국산 자동차 및 자동차 부품에 대한 관세를 대폭 인상했습니다. 이는 미국 내 일자리 창출과 제조업 기반 강화를 목표로 합니다.</p>
+    </div>
+    
+    <div class="analysis-card">
+        <h4>중국과의 무역 갈등</h4>
+        <p>미-중 무역 갈등이 지속되면서 중국산 제품에 대한 추가 관세가 유지되고 있으며, 특히 전기차 배터리와 같은 첨단 기술 분야에서의 중국 의존도를 낮추기 위한 정책이 강화되고 있습니다.</p>
+    </div>
+    
+    <div class="analysis-card">
+        <h4>무역 협정 재협상</h4>
+        <p>USMCA(미국-멕시코-캐나다 협정)와 같은 무역 협정을 통해 북미 지역 내 공급망을 강화하려는 움직임이 있으며, 다른 국가들과의 무역 협정도 미국에 유리한 방향으로 재협상을 추진하고 있습니다.</p>
+    </div>
+</section>
+{% endblock %}
