@@ -1,0 +1,24 @@
+{
+  "collection_date": "2025-04-07T11:12:53.632200",
+  "product_category": "EPS 모터",
+  "weights": {
+    "corporate_tax": 0.05,
+    "interest_rate": 0.05,
+    "labor_cost": 0.4,
+    "land_cost": 0.05,
+    "utility_cost": 0.25,
+    "logistics_cost": 0.1,
+    "fx_inflation_risk": 0.1
+  },
+  "manufacturing_cost_index": {
+    "KR": 100.0,
+    "JP": 108.84303216001894,
+    "CN": 61.690035286752604,
+    "IN": 55.91921430512661,
+    "TH": 53.77066262350944,
+    "VN": 52.688858039405886,
+    "TW": 71.674320499689,
+    "EU": 128.02398131327206,
+    "MX": 71.79342411927169
+  }
+}

@@ -1,47 +1,14 @@
 {
-  "KR": {
-    "agreement": "한-미 FTA",
-    "benefit_description": "대부분의 자동차 부품에 대해 관세 면제",
-    "benefit_percentage": 100.0
-  },
-  "JP": {
-    "agreement": "일반 관세",
-    "benefit_description": "무역 협정 혜택 없음",
-    "benefit_percentage": 0.0
-  },
-  "CN": {
-    "agreement": "추가 관세 부과",
-    "benefit_description": "트럼프 행정부의 단계적 추가 관세 부과 (2월 10%, 3월 20%, 4월 54%)",
-    "benefit_percentage": -54.0
-  },
-  "IN": {
-    "agreement": "일반 관세",
-    "benefit_description": "무역 협정 혜택 없음",
-    "benefit_percentage": 0.0
-  },
-  "TH": {
-    "agreement": "일반 관세",
-    "benefit_description": "무역 협정 혜택 없음",
-    "benefit_percentage": 0.0
-  },
-  "VN": {
-    "agreement": "일반 관세",
-    "benefit_description": "무역 협정 혜택 없음",
-    "benefit_percentage": 0.0
-  },
-  "TW": {
-    "agreement": "일반 관세",
-    "benefit_description": "무역 협정 혜택 없음",
-    "benefit_percentage": 0.0
-  },
-  "EU": {
-    "agreement": "미-EU 무역협정",
-    "benefit_description": "대부분의 자동차 부품에 대해 관세 면제",
-    "benefit_percentage": 100.0
-  },
-  "MX": {
-    "agreement": "USMCA",
-    "benefit_description": "대부분의 자동차 부품에 대해 관세 면제",
-    "benefit_percentage": 100.0
+  "collection_date": "2025-04-07T11:12:54.507106",
+  "data": {
+    "KR": 100.0,
+    "JP": 0.0,
+    "CN": 0.0,
+    "IN": 0.0,
+    "TH": 0.0,
+    "VN": 0.0,
+    "TW": 0.0,
+    "EU": 0.0,
+    "MX": 100.0
   }
 }
