@@ -10,9 +10,20 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
+import logging
 from pptx import Presentation
-import PyPDF2
+from PyPDF2 import PdfReader
 import re
+
+# 로깅 설정
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'tariff_analysis.log')),
+        logging.StreamHandler()
+    ]
+)
 
 # 프로젝트 루트 디렉토리 경로
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -35,11 +46,37 @@ TARGET_COUNTRIES = {
     'MX': '멕시코'
 }
 
+def validate_document_format(file_path):
+    """
+    문서 형식을 검증합니다.
+    """
+    try:
+        if file_path.endswith('.pptx'):
+            presentation = Presentation(file_path)
+            if len(presentation.slides) == 0:
+                raise ValueError("빈 PowerPoint 문서입니다.")
+        elif file_path.endswith('.pdf'):
+            with open(file_path, 'rb') as file:
+                pdf_reader = PdfReader(file)
+                if len(pdf_reader.pages) == 0:
+                    raise ValueError("빈 PDF 문서입니다.")
+        return True
+    except Exception as e:
+        print(f"문서 형식 검증 실패: {str(e)}")
+        return False
+
 def analyze_pptx_document(pptx_path):
     """
     PowerPoint 문서를 분석하여 관세 정책 정보를 추출합니다.
     """
-    print(f"PowerPoint 문서 분석 중: {pptx_path}")
+    logging.info(f"PowerPoint 문서 분석 중: {pptx_path}")
+    
+    # 문서 형식 검증
+    if not validate_document_format(pptx_path):
+        return {
+            "document_name": os.path.basename(pptx_path),
+            "error": "문서 형식이 올바르지 않습니다."
+        }
     
     # 결과를 저장할 딕셔너리
     tariff_info = {
@@ -67,7 +104,7 @@ def analyze_pptx_document(pptx_path):
         full_text = "\n".join(all_text)
         
         # 관세율 정보 추출 (예: "XX% 관세" 패턴)
-        tariff_rates = re.findall(r'(\d+(?:\.\d+)?)%\s*(?:관세|tariff)', full_text)
+        tariff_rates = re.findall(r'(?:^|\s)(\d+(?:\.\d+)?)\s*%\s*(?:관세|tariff|세율|rate)(?:\s|$)', full_text)
         
         # 국가별 관세 정보 추출
         for country_code, country_name in TARGET_COUNTRIES.items():
@@ -78,12 +115,12 @@ def analyze_pptx_document(pptx_path):
                 "notes": []
             }
             
-            # 국가명 주변 텍스트 검색
-            country_pattern = re.compile(f"{country_name}|{country_code}")
+            # 국가명 주변 텍스트 검색 (더 정확한 패턴)
+            country_pattern = re.compile(f"(?:^|\s)(?:{country_name}|{country_code})(?:\s|$)")
             for text in all_text:
                 if country_pattern.search(text):
-                    # 해당 슬라이드에서 관세율 추출
-                    rates = re.findall(r'(\d+(?:\.\d+)?)%', text)
+                    # 해당 슬라이드에서 관세율 추출 (더 정확한 패턴)
+                    rates = re.findall(r'(?:^|\s)(\d+(?:\.\d+)?)\s*%(?:\s|$)', text)
                     if rates:
                         country_info["tariff_rates"].extend(rates)
                     
@@ -142,12 +179,12 @@ def analyze_pptx_document(pptx_path):
         # 중복 제거
         tariff_info["tariff_policies"] = list(set(tariff_info["tariff_policies"]))
         
-        print(f"PowerPoint 문서 분석 완료: {len(tariff_info['tariff_policies'])} 정책 정보 추출")
+        logging.info(f"PowerPoint 문서 분석 완료: {len(tariff_info['tariff_policies'])} 정책 정보 추출")
         
         return tariff_info
     
     except Exception as e:
-        print(f"PowerPoint 문서 분석 중 오류 발생: {str(e)}")
+        logging.error(f"PowerPoint 문서 분석 중 오류 발생: {str(e)}")
         tariff_info["error"] = str(e)
         return tariff_info
 
@@ -155,7 +192,7 @@ def analyze_pdf_document(pdf_path):
     """
     PDF 문서를 분석하여 관세 정책 정보를 추출합니다.
     """
-    print(f"PDF 문서 분석 중: {pdf_path}")
+    logging.info(f"PDF 문서 분석 중: {pdf_path}")
     
     # 결과를 저장할 딕셔너리
     tariff_info = {
@@ -169,7 +206,7 @@ def analyze_pdf_document(pdf_path):
     try:
         # PDF 문서 열기
         with open(pdf_path, 'rb') as file:
-            pdf_reader = PyPDF2.PdfReader(file)
+            pdf_reader = PdfReader(file)
             
             # 모든 페이지의 텍스트 추출
             all_text = []
@@ -181,7 +218,7 @@ def analyze_pdf_document(pdf_path):
         full_text = "\n".join(all_text)
         
         # 관세율 정보 추출 (예: "XX% 관세" 패턴)
-        tariff_rates = re.findall(r'(\d+(?:\.\d+)?)%\s*(?:관세|tariff)', full_text)
+        tariff_rates = re.findall(r'(?:^|\s)(\d+(?:\.\d+)?)\s*%\s*(?:관세|tariff|세율|rate)(?:\s|$)', full_text)
         
         # 국가별 관세 정보 추출
         for country_code, country_name in TARGET_COUNTRIES.items():
@@ -192,12 +229,12 @@ def analyze_pdf_document(pdf_path):
                 "notes": []
             }
             
-            # 국가명 주변 텍스트 검색
-            country_pattern = re.compile(f"{country_name}|{country_code}")
+            # 국가명 주변 텍스트 검색 (더 정확한 패턴)
+            country_pattern = re.compile(f"(?:^|\s)(?:{country_name}|{country_code})(?:\s|$)")
             for text in all_text:
                 if country_pattern.search(text):
-                    # 해당 페이지에서 관세율 추출
-                    rates = re.findall(r'(\d+(?:\.\d+)?)%', text)
+                    # 해당 페이지에서 관세율 추출 (더 정확한 패턴)
+                    rates = re.findall(r'(?:^|\s)(\d+(?:\.\d+)?)\s*%(?:\s|$)', text)
                     if rates:
                         country_info["tariff_rates"].extend(rates)
                     
@@ -256,12 +293,12 @@ def analyze_pdf_document(pdf_path):
         # 중복 제거
         tariff_info["tariff_policies"] = list(set(tariff_info["tariff_policies"]))
         
-        print(f"PDF 문서 분석 완료: {len(tariff_info['tariff_policies'])} 정책 정보 추출")
+        logging.info(f"PDF 문서 분석 완료: {len(tariff_info['tariff_policies'])} 정책 정보 추출")
         
         return tariff_info
     
     except Exception as e:
-        print(f"PDF 문서 분석 중 오류 발생: {str(e)}")
+        logging.error(f"PDF 문서 분석 중 오류 발생: {str(e)}")
         tariff_info["error"] = str(e)
         return tariff_info
 
@@ -269,122 +306,76 @@ def analyze_all_documents():
     """
     모든 문서를 분석하여 관세 정책 정보를 추출합니다.
     """
-    print("모든 관세 정책 문서 분석 시작...")
+    logging.info("모든 관세 정책 문서 분석 시작...")
     
-    # 결과를 저장할 딕셔너리
-    analysis_results = {
-        "analysis_date": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
-        "documents": [],
-        "consolidated_tariff_policies": [],
-        "country_specific_tariffs": {},
-        "hs_code_tariffs": {}
-    }
-    
-    # 문서 목록 가져오기
-    documents = []
-    for filename in os.listdir(NEW_TARIFF_DOCS_DIR):
-        file_path = os.path.join(NEW_TARIFF_DOCS_DIR, filename)
-        if filename.endswith('.pptx'):
-            documents.append({"path": file_path, "type": "pptx"})
-        elif filename.endswith('.pdf'):
-            documents.append({"path": file_path, "type": "pdf"})
-    
-    # 각 문서 분석
-    for doc in documents:
-        if doc["type"] == "pptx":
-            doc_result = analyze_pptx_document(doc["path"])
-        elif doc["type"] == "pdf":
-            doc_result = analyze_pdf_document(doc["path"])
-        else:
-            continue
+    try:
+        # 결과를 저장할 딕셔너리
+        analysis_results = {
+            "analysis_date": datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            "documents": [],
+            "consolidated_tariff_policies": [],
+            "country_specific_tariffs": {},
+            "hs_code_tariffs": {}
+        }
         
-        analysis_results["documents"].append({
-            "name": os.path.basename(doc["path"]),
-            "type": doc["type"],
-            "analysis_result": doc_result
-        })
+        # 문서 목록 가져오기
+        documents = []
+        for filename in os.listdir(NEW_TARIFF_DOCS_DIR):
+            file_path = os.path.join(NEW_TARIFF_DOCS_DIR, filename)
+            if filename.endswith('.pptx'):
+                documents.append({"path": file_path, "type": "pptx"})
+            elif filename.endswith('.pdf'):
+                documents.append({"path": file_path, "type": "pdf"})
         
-        # 정책 정보 통합
-        analysis_results["consolidated_tariff_policies"].extend(doc_result["tariff_policies"])
+        if not documents:
+            logging.warning("분석할 문서가 없습니다.")
+            return analysis_results
         
-        # 국가별 관세 정보 통합
-        for country_code, country_info in doc_result["country_specific_tariffs"].items():
-            if country_code not in analysis_results["country_specific_tariffs"]:
-                analysis_results["country_specific_tariffs"][country_code] = {
-                    "country_code": country_code,
-                    "country_name": TARGET_COUNTRIES[country_code],
-                    "tariff_rates": [],
-                    "notes": []
-                }
-            
-            analysis_results["country_specific_tariffs"][country_code]["tariff_rates"].extend(country_info["tariff_rates"])
-            analysis_results["country_specific_tariffs"][country_code]["notes"].extend(country_info["notes"])
+        # 각 문서 분석
+        for doc in documents:
+            try:
+                if doc["type"] == "pptx":
+                    doc_result = analyze_pptx_document(doc["path"])
+                elif doc["type"] == "pdf":
+                    doc_result = analyze_pdf_document(doc["path"])
+                else:
+                    continue
+                
+                if "error" in doc_result:
+                    logging.error(f"문서 분석 실패: {doc['path']} - {doc_result['error']}")
+                    continue
+                
+                analysis_results["documents"].append({
+                    "name": os.path.basename(doc["path"]),
+                    "type": doc["type"],
+                    "analysis_result": doc_result
+                })
+                
+                logging.info(f"문서 분석 완료: {doc['path']}")
+                
+            except Exception as e:
+                logging.error(f"문서 분석 중 오류 발생: {doc['path']} - {str(e)}")
+                continue
         
-        # HS 코드별 관세 정보 통합
-        for hs_code, hs_info in doc_result["hs_code_tariffs"].items():
-            if hs_code not in analysis_results["hs_code_tariffs"]:
-                analysis_results["hs_code_tariffs"][hs_code] = {
-                    "rates": [],
-                    "context": []
-                }
-            
-            analysis_results["hs_code_tariffs"][hs_code]["rates"].extend(hs_info["rates"])
-            analysis_results["hs_code_tariffs"][hs_code]["context"].extend(hs_info["context"])
-    
-    # 중복 제거
-    analysis_results["consolidated_tariff_policies"] = list(set(analysis_results["consolidated_tariff_policies"]))
-    
-    for country_code in analysis_results["country_specific_tariffs"]:
-        analysis_results["country_specific_tariffs"][country_code]["tariff_rates"] = list(set(analysis_results["country_specific_tariffs"][country_code]["tariff_rates"]))
-        analysis_results["country_specific_tariffs"][country_code]["notes"] = list(set(analysis_results["country_specific_tariffs"][country_code]["notes"]))
-    
-    for hs_code in analysis_results["hs_code_tariffs"]:
-        analysis_results["hs_code_tariffs"][hs_code]["rates"] = list(set(analysis_results["hs_code_tariffs"][hs_code]["rates"]))
-        analysis_results["hs_code_tariffs"][hs_code]["context"] = list(set(analysis_results["hs_code_tariffs"][hs_code]["context"]))
-    
-    # 결과 저장
-    output_file = os.path.join(DATA_DIR, 'tariff_analysis_results.json')
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(analysis_results, f, ensure_ascii=False, indent=2)
-    
-    print(f"문서 분석 결과 저장 완료: {output_file}")
-    
-    # 특별히 관심 있는 HS 코드에 대한 요약 생성
-    target_hs_codes = ["8501.31", "8414.59"]
-    hs_code_summary = {}
-    
-    for hs_code in target_hs_codes:
-        if hs_code in analysis_results["hs_code_tariffs"]:
-            hs_info = analysis_results["hs_code_tariffs"][hs_code]
-            
-            # 가장 빈번한 관세율 추출
-            rates = [float(rate) for rate in hs_info["rates"] if rate]
-            if rates:
-                most_common_rate = max(set(rates), key=rates.count)
-            else:
-                most_common_rate = None
-            
-            hs_code_summary[hs_code] = {
-                "most_common_rate": most_common_rate,
-                "all_rates": rates,
-                "context_summary": "\n".join(hs_info["context"][:3])  # 처음 3개 컨텍스트만 요약
-            }
-    
-    # HS 코드 요약 저장
-    hs_summary_file = os.path.join(DATA_DIR, 'hs_code_tariff_summary.json')
-    with open(hs_summary_file, 'w', encoding='utf-8') as f:
-        json.dump(hs_code_summary, f, ensure_ascii=False, indent=2)
-    
-    print(f"HS 코드 관세 요약 저장 완료: {hs_summary_file}")
-    
-    return analysis_results
+        # 결과 저장
+        output_file = os.path.join(DATA_DIR, 'tariff_analysis_results.json')
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(analysis_results, f, ensure_ascii=False, indent=2)
+        
+        logging.info(f"문서 분석 결과 저장 완료: {output_file}")
+        
+        return analysis_results
+        
+    except Exception as e:
+        logging.error(f"전체 문서 분석 중 오류 발생: {str(e)}")
+        raise
 
 def search_white_house_articles():
     """
     백악관 웹사이트에서 관세 정책 관련 기사를 검색합니다.
     이 함수는 실제로 웹 검색을 수행하지 않고, 대신 관세 정책에 대한 일반적인 정보를 제공합니다.
     """
-    print("백악관 관세 정책 정보 검색 중...")
+    logging.info("백악관 관세 정책 정보 검색 중...")
     
     # 백악관 관세 정책 정보 (실제 검색 결과 대신 사용)
     white_house_info = {
@@ -417,7 +408,7 @@ def search_white_house_articles():
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(white_house_info, f, ensure_ascii=False, indent=2)
     
-    print(f"백악관 관세 정책 정보 저장 완료: {output_file}")
+    logging.info(f"백악관 관세 정책 정보 저장 완료: {output_file}")
     
     return white_house_info
 
@@ -425,7 +416,7 @@ def generate_analysis_report():
     """
     문서 분석 결과와 백악관 정보를 바탕으로 종합 보고서를 생성합니다.
     """
-    print("관세 정책 분석 보고서 생성 중...")
+    logging.info("관세 정책 분석 보고서 생성 중...")
     
     # 문서 분석 결과 로드
     analysis_file = os.path.join(DATA_DIR, 'tariff_analysis_results.json')
@@ -513,7 +504,7 @@ def generate_analysis_report():
     with open(report_file, 'w', encoding='utf-8') as f:
         f.write(report_text)
     
-    print(f"관세 정책 분석 보고서 저장 완료: {report_file}")
+    logging.info(f"관세 정책 분석 보고서 저장 완료: {report_file}")
     
     return report_file
 
@@ -527,4 +518,4 @@ if __name__ == "__main__":
     # 분석 보고서 생성
     report_file = generate_analysis_report()
     
-    print("관세 정책 문서 분석 완료!")
+    logging.info("관세 정책 문서 분석 완료!")
