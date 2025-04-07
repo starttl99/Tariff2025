@@ -53,6 +53,13 @@ app = Flask(__name__,
             static_folder=STATIC_DIR,
             template_folder=TEMPLATE_DIR)
 
+@app.after_request
+def add_header(response):
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    response.headers["Pragma"] = "no-cache"
+    response.headers["Expires"] = "0"
+    return response
+
 # 필요한 디렉토리 생성
 def ensure_directories():
     """필요한 디렉토리가 존재하는지 확인하고, 없으면 생성합니다."""
